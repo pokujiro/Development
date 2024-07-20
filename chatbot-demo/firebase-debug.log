@@ -1,0 +1,397 @@
+[debug] [2024-07-19T02:47:36.853Z] ----------------------------------------------------------------------
+[debug] [2024-07-19T02:47:36.857Z] Command:       C:\Users\user\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve
+[debug] [2024-07-19T02:47:36.857Z] CLI Version:   13.11.2
+[debug] [2024-07-19T02:47:36.858Z] Platform:      win32
+[debug] [2024-07-19T02:47:36.858Z] Node Version:  v18.5.0
+[debug] [2024-07-19T02:47:36.871Z] Time:          Fri Jul 19 2024 11:47:36 GMT+0900 (GMT+09:00)
+[debug] [2024-07-19T02:47:36.872Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-19T02:47:37.078Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-19T02:47:37.079Z] > authorizing via signed-in user (yutapokujiro2010@gmail.com)
+[debug] [2024-07-19T02:47:37.079Z] [iam] checking project chatbot-demo-f5dbe for permissions ["firebase.projects.get"]
+[debug] [2024-07-19T02:47:37.084Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions [none]
+[debug] [2024-07-19T02:47:37.085Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions x-goog-quota-user=projects/chatbot-demo-f5dbe
+[debug] [2024-07-19T02:47:37.086Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-19T02:47:37.943Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions 200
+[debug] [2024-07-19T02:47:37.944Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-19T02:47:37.947Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe [none]
+[debug] [2024-07-19T02:47:38.308Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe 200
+[debug] [2024-07-19T02:47:38.308Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe {"projectId":"chatbot-demo-f5dbe","projectNumber":"10175875358","displayName":"chatbot-demo","name":"projects/chatbot-demo-f5dbe","resources":{"hostingSite":"chatbot-demo-f5dbe"},"state":"ACTIVE","etag":"1_ef25c97a-babd-4e30-ad60-c153bb24be03"}
+[info] 
+[info] === Serving from 'C:\Users\user\Documents\Development\chatbot-demo'...
+[info] 
+[debug] [2024-07-19T02:47:38.327Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\yutapokujiro2010_gmail_com_application_default_credentials.json
+[debug] [2024-07-19T02:47:38.328Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites 
+[debug] [2024-07-19T02:47:38.333Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\yutapokujiro2010_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\yutapokujiro2010_gmail_com_application_default_credentials.json"}}
+[debug] [2024-07-19T02:47:38.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig [none]
+[debug] [2024-07-19T02:47:38.671Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig 200
+[debug] [2024-07-19T02:47:38.671Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig {"projectId":"chatbot-demo-f5dbe","storageBucket":"chatbot-demo-f5dbe.appspot.com"}
+[debug] [2024-07-19T02:47:39.185Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites 200
+[debug] [2024-07-19T02:47:39.185Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites {"sites":[{"name":"projects/chatbot-demo-f5dbe/sites/chatbot-demo-f5dbe","defaultUrl":"https://chatbot-demo-f5dbe.web.app","appId":"1:10175875358:web:62d312820da591d2a9610f","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-19T02:47:39.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config [none]
+[debug] [2024-07-19T02:47:40.131Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config 200
+[debug] [2024-07-19T02:47:40.132Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config {"projectId":"chatbot-demo-f5dbe","appId":"1:10175875358:web:62d312820da591d2a9610f","storageBucket":"chatbot-demo-f5dbe.appspot.com","apiKey":"AIzaSyBYN394wn_qlVDL0jX1q1spJdicZvG4uMA","authDomain":"chatbot-demo-f5dbe.firebaseapp.com","messagingSenderId":"10175875358","measurementId":"G-P3G25BX0KK"}
+[debug] [2024-07-19T02:47:40.141Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe [none]
+[debug] [2024-07-19T02:47:40.470Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe 200
+[debug] [2024-07-19T02:47:40.470Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe {"projectId":"chatbot-demo-f5dbe","projectNumber":"10175875358","displayName":"chatbot-demo","name":"projects/chatbot-demo-f5dbe","resources":{"hostingSite":"chatbot-demo-f5dbe"},"state":"ACTIVE","etag":"1_ef25c97a-babd-4e30-ad60-c153bb24be03"}
+[info] i  functions: Watching "C:\Users\user\Documents\Development\chatbot-demo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Documents\\Development\\chatbot-demo\\functions\" for Cloud Functions..."}}
+[info] i  hosting[chatbot-demo-f5dbe]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[chatbot-demo-f5dbe]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-07-19T02:47:40.508Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2024-07-19T02:47:40.512Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2024-07-19T02:47:40.513Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2024-07-19T02:47:40.515Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[info] Shutting down...
+[debug] [2024-07-19T02:58:53.550Z] ----------------------------------------------------------------------
+[debug] [2024-07-19T02:58:53.552Z] Command:       C:\Users\user\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve
+[debug] [2024-07-19T02:58:53.553Z] CLI Version:   13.11.2
+[debug] [2024-07-19T02:58:53.553Z] Platform:      win32
+[debug] [2024-07-19T02:58:53.553Z] Node Version:  v18.5.0
+[debug] [2024-07-19T02:58:53.555Z] Time:          Fri Jul 19 2024 11:58:53 GMT+0900 (GMT+09:00)
+[debug] [2024-07-19T02:58:53.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-19T02:58:53.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-19T02:58:53.684Z] > authorizing via signed-in user (yutapokujiro2010@gmail.com)
+[debug] [2024-07-19T02:58:53.684Z] [iam] checking project chatbot-demo-f5dbe for permissions ["firebase.projects.get"]
+[debug] [2024-07-19T02:58:53.686Z] > refreshing access token with scopes: []
+[debug] [2024-07-19T02:58:53.688Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-19T02:58:53.688Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-19T02:58:53.886Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-07-19T02:58:53.887Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-19T02:58:53.920Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions [none]
+[debug] [2024-07-19T02:58:53.920Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions x-goog-quota-user=projects/chatbot-demo-f5dbe
+[debug] [2024-07-19T02:58:53.920Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-19T02:58:54.720Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions 200
+[debug] [2024-07-19T02:58:54.721Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-19T02:58:54.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe [none]
+[debug] [2024-07-19T02:58:55.107Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe 200
+[debug] [2024-07-19T02:58:55.108Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe {"projectId":"chatbot-demo-f5dbe","projectNumber":"10175875358","displayName":"chatbot-demo","name":"projects/chatbot-demo-f5dbe","resources":{"hostingSite":"chatbot-demo-f5dbe"},"state":"ACTIVE","etag":"1_ef25c97a-babd-4e30-ad60-c153bb24be03"}
+[info] 
+[info] === Serving from 'C:\Users\user\Documents\Development\chatbot-demo'...
+[info] 
+[debug] [2024-07-19T02:58:55.131Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\yutapokujiro2010_gmail_com_application_default_credentials.json
+[debug] [2024-07-19T02:58:55.132Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites 
+[debug] [2024-07-19T02:58:55.139Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\yutapokujiro2010_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\yutapokujiro2010_gmail_com_application_default_credentials.json"}}
+[debug] [2024-07-19T02:58:55.141Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig [none]
+[debug] [2024-07-19T02:58:55.486Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig 200
+[debug] [2024-07-19T02:58:55.486Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig {"projectId":"chatbot-demo-f5dbe","storageBucket":"chatbot-demo-f5dbe.appspot.com"}
+[debug] [2024-07-19T02:58:55.852Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites 200
+[debug] [2024-07-19T02:58:55.852Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites {"sites":[{"name":"projects/chatbot-demo-f5dbe/sites/chatbot-demo-f5dbe","defaultUrl":"https://chatbot-demo-f5dbe.web.app","appId":"1:10175875358:web:62d312820da591d2a9610f","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-19T02:58:55.853Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config [none]
+[debug] [2024-07-19T02:58:56.724Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config 200
+[debug] [2024-07-19T02:58:56.724Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config {"projectId":"chatbot-demo-f5dbe","appId":"1:10175875358:web:62d312820da591d2a9610f","storageBucket":"chatbot-demo-f5dbe.appspot.com","apiKey":"AIzaSyBYN394wn_qlVDL0jX1q1spJdicZvG4uMA","authDomain":"chatbot-demo-f5dbe.firebaseapp.com","messagingSenderId":"10175875358","measurementId":"G-P3G25BX0KK"}
+[debug] [2024-07-19T02:58:56.746Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe [none]
+[debug] [2024-07-19T02:58:57.089Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe 200
+[debug] [2024-07-19T02:58:57.089Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe {"projectId":"chatbot-demo-f5dbe","projectNumber":"10175875358","displayName":"chatbot-demo","name":"projects/chatbot-demo-f5dbe","resources":{"hostingSite":"chatbot-demo-f5dbe"},"state":"ACTIVE","etag":"1_ef25c97a-babd-4e30-ad60-c153bb24be03"}
+[info] i  functions: Watching "C:\Users\user\Documents\Development\chatbot-demo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Documents\\Development\\chatbot-demo\\functions\" for Cloud Functions..."}}
+[info] i  hosting[chatbot-demo-f5dbe]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[chatbot-demo-f5dbe]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-07-19T02:58:57.155Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2024-07-19T02:58:57.162Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2024-07-19T02:58:57.163Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2024-07-19T02:58:57.165Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-07-19T03:01:57.216Z] File C:\Users\user\Documents\Development\chatbot-demo\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Documents\\Development\\chatbot-demo\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2024-07-19T03:01:58.226Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2024-07-19T03:01:58.238Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2024-07-19T03:01:58.242Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2024-07-19T03:01:58.246Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-07-19T03:03:23.776Z] File C:\Users\user\Documents\Development\chatbot-demo\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Documents\\Development\\chatbot-demo\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2024-07-19T03:03:24.792Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2024-07-19T03:03:24.804Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2024-07-19T03:03:24.805Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2024-07-19T03:03:24.808Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[info] Shutting down...
+[debug] [2024-07-19T03:03:42.529Z] ----------------------------------------------------------------------
+[debug] [2024-07-19T03:03:42.534Z] Command:       C:\Users\user\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve
+[debug] [2024-07-19T03:03:42.535Z] CLI Version:   13.11.2
+[debug] [2024-07-19T03:03:42.535Z] Platform:      win32
+[debug] [2024-07-19T03:03:42.535Z] Node Version:  v18.5.0
+[debug] [2024-07-19T03:03:42.539Z] Time:          Fri Jul 19 2024 12:03:42 GMT+0900 (GMT+09:00)
+[debug] [2024-07-19T03:03:42.539Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-19T03:03:42.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-19T03:03:42.837Z] > authorizing via signed-in user (yutapokujiro2010@gmail.com)
+[debug] [2024-07-19T03:03:42.837Z] [iam] checking project chatbot-demo-f5dbe for permissions ["firebase.projects.get"]
+[debug] [2024-07-19T03:03:42.843Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions [none]
+[debug] [2024-07-19T03:03:42.843Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions x-goog-quota-user=projects/chatbot-demo-f5dbe
+[debug] [2024-07-19T03:03:42.844Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-19T03:03:43.604Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions 200
+[debug] [2024-07-19T03:03:43.605Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-demo-f5dbe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-19T03:03:43.606Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe [none]
+[debug] [2024-07-19T03:03:43.963Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe 200
+[debug] [2024-07-19T03:03:43.964Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe {"projectId":"chatbot-demo-f5dbe","projectNumber":"10175875358","displayName":"chatbot-demo","name":"projects/chatbot-demo-f5dbe","resources":{"hostingSite":"chatbot-demo-f5dbe"},"state":"ACTIVE","etag":"1_ef25c97a-babd-4e30-ad60-c153bb24be03"}
+[info] 
+[info] === Serving from 'C:\Users\user\Documents\Development\chatbot-demo'...
+[info] 
+[debug] [2024-07-19T03:03:43.982Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\yutapokujiro2010_gmail_com_application_default_credentials.json
+[debug] [2024-07-19T03:03:43.983Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites 
+[debug] [2024-07-19T03:03:43.987Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\yutapokujiro2010_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\yutapokujiro2010_gmail_com_application_default_credentials.json"}}
+[debug] [2024-07-19T03:03:43.988Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig [none]
+[debug] [2024-07-19T03:03:44.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig 200
+[debug] [2024-07-19T03:03:44.338Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/adminSdkConfig {"projectId":"chatbot-demo-f5dbe","storageBucket":"chatbot-demo-f5dbe.appspot.com"}
+[debug] [2024-07-19T03:03:44.615Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites 200
+[debug] [2024-07-19T03:03:44.616Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/sites {"sites":[{"name":"projects/chatbot-demo-f5dbe/sites/chatbot-demo-f5dbe","defaultUrl":"https://chatbot-demo-f5dbe.web.app","appId":"1:10175875358:web:62d312820da591d2a9610f","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-19T03:03:44.616Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config [none]
+[debug] [2024-07-19T03:03:45.635Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config 200
+[debug] [2024-07-19T03:03:45.635Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe/webApps/1:10175875358:web:62d312820da591d2a9610f/config {"projectId":"chatbot-demo-f5dbe","appId":"1:10175875358:web:62d312820da591d2a9610f","storageBucket":"chatbot-demo-f5dbe.appspot.com","apiKey":"AIzaSyBYN394wn_qlVDL0jX1q1spJdicZvG4uMA","authDomain":"chatbot-demo-f5dbe.firebaseapp.com","messagingSenderId":"10175875358","measurementId":"G-P3G25BX0KK"}
+[debug] [2024-07-19T03:03:45.647Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe [none]
+[debug] [2024-07-19T03:03:46.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe 200
+[debug] [2024-07-19T03:03:46.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-demo-f5dbe {"projectId":"chatbot-demo-f5dbe","projectNumber":"10175875358","displayName":"chatbot-demo","name":"projects/chatbot-demo-f5dbe","resources":{"hostingSite":"chatbot-demo-f5dbe"},"state":"ACTIVE","etag":"1_ef25c97a-babd-4e30-ad60-c153bb24be03"}
+[info] i  functions: Watching "C:\Users\user\Documents\Development\chatbot-demo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Documents\\Development\\chatbot-demo\\functions\" for Cloud Functions..."}}
+[info] i  hosting[chatbot-demo-f5dbe]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[chatbot-demo-f5dbe]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-07-19T03:03:46.055Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2024-07-19T03:03:46.059Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\.cache\\firebase\\tools\\lib\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2024-07-19T03:03:46.061Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2024-07-19T03:03:46.062Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET /static/css/main.f855e6bc.css HTTP/1.1" 200 779 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET /static/css/main.f855e6bc.css HTTP/1.1\" 200 779 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET /static/js/main.a5443872.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET /static/js/main.a5443872.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:04:09 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:04:09 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:01 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:01 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:01 +0000] "GET /static/css/main.f855e6bc.css HTTP/1.1" 200 779 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:01 +0000] \"GET /static/css/main.f855e6bc.css HTTP/1.1\" 200 779 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:01 +0000] "GET /static/js/main.a5443872.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:01 +0000] \"GET /static/js/main.a5443872.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:01 +0000] "GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:01 +0000] \"GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:01 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:01 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:01 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:01 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:02 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:02 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jul/2024:03:06:02 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jul/2024:03:06:02 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
