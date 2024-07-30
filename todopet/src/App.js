@@ -4,6 +4,10 @@ import { useState, useRef } from "react";
 import { TodoList } from "./components/index";
 import { v4 as uuidv4} from "uuid";
 
+//　Material UI　試し
+import Button from '@mui/material/Button';
+
+
 function App() {
   const [todos, setTodos] = useState([]);
 
@@ -44,6 +48,7 @@ function App() {
       <button onClick={handleClear}>タスクの削除</button>
       {/* tureのものだけを残す */}
       <div>残りのタスク:{todos.filter((todo) => !todo.completed).length}</div>
+      <Button variant="contained">Hello world</Button>
     </div>
   );
 }
