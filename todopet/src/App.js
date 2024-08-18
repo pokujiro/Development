@@ -12,7 +12,11 @@ import { Grid, Button, TextField, Typography, Paper } from '@mui/material';
 function App() {
   const [todos, setTodos] = useState([]);
   const [selectedDate, setSelectedDate] = useState(new Date());
-
+  const [pet, setPet] = useState({
+    name: "dog",
+    level: 1,
+    affection: 0
+  })
   // useRef()要素を抽出する。
   const todoNameRef = useRef();
 
@@ -59,6 +63,7 @@ function App() {
         // ...スプレッド構文、タスクの追加
         return [...prevTodos, newTask]; 
       });
+      updatePetAffection(3);
     }catch(error){
       console.error(error);
     }
@@ -86,11 +91,14 @@ function App() {
 
   const handleClear = async () => {
     const completedTodos = todos.filter((todo) => todo.completed);
+    const completedCount = completedTodos.length;
+    console.log(completedCount.length);
     // const newTodos = todos.filter((todo) => !todo.completed);
     // setTodos(newTodos);
     try {
       await Promise.all(completedTodos.map(todo => axios.delete(`http://localhost:8000/api/tasks/${todo.id}`)));
       setTodos(todos.filter((todo) => !todo.completed));
+      updatePetAffection(20 * completedCount);
     } catch (error) {
       console.error(error);
     }
@@ -100,14 +108,43 @@ function App() {
     setSelectedDate(date);
   };
 
+  const updatePetAffection = (points) => {
+    setPet(prevPet => {
+      const newAffection = prevPet.affection + points;
+      if(newAffection >= 100){
+        return {
+          ...prevPet,
+          affection: newAffection % 100,
+          level: prevPet.level + 1
+        };
+      } else {
+        return {
+          ...prevPet,
+          affection: newAffection
+        };
+      }
+    });
+  }
+
   return (
     <Grid container spacing={1.5} style={{ padding: 20 }}>
     {/* タイトルエリア */}
     <Grid item xs={12}>
-      <Paper style={{ padding: 20, textAlign: 'center', backgroundColor: '#E0E0E0', height: '250px' }}>
-        <Typography variant="h2">🐶</Typography>
+      <Paper style={{ padding: 20, textAlign: 'center', backgroundColor: '#E0E0E0', height: '300px' }}>
+        <Typography 
+          variant="h2" 
+          style={{ marginBottom: 20 }} // アイコンの下に余白を追加
+        >
+        <div style={{ height: '80px'}}>
+        </div>
+          <span role="img" aria-label="dog" style={{ fontSize: '100px' }}>🐶</span>
+        </Typography>
+        <div style={{ marginTop: 30 }}>
+          {pet.name} - レベル: {pet.level} - 愛情度: {pet.affection}
+        </div>
       </Paper>
     </Grid>
+
 
     {/* タスクリストエリア */}
     <Grid item xs={8}>
