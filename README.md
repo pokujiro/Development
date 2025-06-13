@@ -2,8 +2,8 @@
 
 日々のタスク管理に、ペット育成の要素を加えてモチベーションを維持しやすくするWebアプリケーションです。タスクを完了することでペットの「愛情度」が上がり、ユーザーの継続的な利用を促します。
 
-![TodoPet Screenshot](./path/to/your/screenshot.png)
-*上記スクリーンショットへのパスは、ご自身の画像に合わせて修正してください。*
+![TodoPet Screenshot](images/todopet-demo.png)
+
 
 ## ✨ コンセプト (Concept)
 
