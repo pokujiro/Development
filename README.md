@@ -83,6 +83,7 @@ cd path/to/project/todopet
 # React開発サーバーを起動
 npm start
 # → http://localhost:3000 でサーバーが起動します
+```
 
 全てのサーバーが起動したら、Webブラウザで http://localhost:3000 にアクセスしてください。
 
