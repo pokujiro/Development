@@ -54,3 +54,39 @@ pip install -r requirements.txt
 # 3. フロントエンドのセットアップ
 cd ../todopet
 npm install
+```
+
+### 3. 実行
+
+開発サーバーを起動するには、**2つのターミナル**が必要です。
+
+**ターミナル1：バックエンドサーバーの起動**
+
+```bash
+# プロジェクトのルートからbackendフォルダに移動
+cd path/to/project/backend
+
+# 仮想環境を有効化
+source myenv/bin/activate # Mac/Linux
+# myenv\Scripts\activate  # Windows
+
+# Uvicornサーバーを起動
+uvicorn app.main:app --reload
+# → http://localhost:8000 でサーバーが起動します
+```
+**ターミナル2：フロントエンドサーバーの起動**
+
+```bash
+# プロジェクトのルートからtodopetフォルダに移動
+cd path/to/project/todopet
+
+# React開発サーバーを起動
+npm start
+# → http://localhost:3000 でサーバーが起動します
+
+全てのサーバーが起動したら、Webブラウザで http://localhost:3000 にアクセスしてください。
+
+🌱 今後の展望 (Future Plans)
+- [ ] データ永続化: バックエンドとAPI連携を行い、タスクとペットの情報をデータベースに保存する。
+- [ ] 認証機能の追加: ユーザーごとにデータを管理できるようにログイン機能を追加する。
+- [ ] ペットのアニメーション: 愛情度に応じてペットが動いたり、表情が変わったりする機能。
